@@ -1,0 +1,599 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #3d087b 0% 0% no-repeat padding-box;
+}
+.container {
+  width: 80%;
+  margin: 5% 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+
+  height: 800px;
+}
+.grid-container {
+  width: 50%;
+  height: 850px;
+  margin: 0 1vw;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.logo img {
+  height: 60px;
+}
+.dropdown-menu {
+  background: #fff;
+  border-radius: 12px;
+  height: 52vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.menu-option {
+  margin: 4vh 2vw;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+}
+.menu-option label {
+  display: inline-block;
+  font-size: 18px;
+  color: #3d087b;
+  position: relative;
+  width: 30%;
+  top: 5px;
+  left: 10px;
+  /* position: absolute; */
+  /* top: 10px;
+  left: 50px; */
+}
+select.myTimeSelect {
+  width: 60%;
+  text-align: center;
+  word-spacing: 1vw;
+  font-size: 18px;
+  border-radius: 8px;
+  color: #3d087b;
+}
+
+.message-popup,
+.remainder-msg {
+  position: relative;
+  border: 1px solid var(--unnamed-color-ededed);
+  border-radius: 8px;
+  background: #9140b5 0% 0%;
+  margin-bottom: 3vh;
+}
+.message-popup h1 {
+  margin: 4vh 2vw 1vh 5vw;
+  color: #fff;
+}
+.lower-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-btn {
+  width: 52%;
+  height: 50px;
+  /* UI Properties */
+  background: transparent
+    linear-gradient(113deg, #6e54ec 0%, #cb52f8 40%, #fc5eff 81%, #f1a7c5 100%)
+    0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  text-align: center;
+  padding: 2vh 0vh 5vh 1vh;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover {
+    background: transparent
+      linear-gradient(
+        113deg,
+        #f1a7c5 0%,
+        #fc5eff 40%,
+        #cb52f8 81%,
+        #6e54ec 100%
+      )
+      0% 0% no-repeat padding-box;
+  }
+}
+.remainder-msg {
+  width: 40%;
+}
+
+.remainder-msg p {
+  color: #f25cfe;
+  margin: 1vh 0 1.5vh 2vw;
+}
+
+/*****grid-container-2*****/
+
+.digital-clock-section {
+  display: flex;
+  flex-direction: row;
+
+  background: #ffffff 0% 0% no-repeat padding-box;
+
+  margin-bottom: 6vh;
+  border-radius: 10px;
+  height: 18vh;
+  position: relative;
+}
+.digital-clock-section p {
+  font-size: 32px;
+  align-self: center;
+  margin-left: 50px;
+  color: #3d087b;
+}
+.clock {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); */
+  color: #8a11bf;
+  font-size: 40px;
+  font-family: Orbitron;
+  letter-spacing: 7px;
+  align-self: center;
+  text-align: center;
+}
+.bg-clock {
+  width: 70px;
+  height: 60px;
+  /* UI Properties */
+  background: var(--unnamed-color-f6e2ff) 0% 0% no-repeat padding-box;
+  background: #f6e2ff 0% 0% no-repeat padding-box;
+  padding-top: 2vh;
+  border-radius: 4px;
+  opacity: 1;
+  position: absolute;
+}
+.bg-clock1 {
+  left: 180px;
+}
+.bg-clock2 {
+  left: 280px;
+}
+.bg-clock3 {
+  left: 380px;
+}
+.bg-clock4 {
+  left: 480px;
+  background: #cb52f8;
+  color: #fff;
+}
+
+.blur-bg1 {
+  position: absolute;
+  top: 100px;
+  left: 60px;
+  width: 80%;
+  height: 30px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 0.71;
+}
+.blur-bg2 {
+  top: 105px;
+  left: 75px;
+  width: 75%;
+  height: 40px;
+  position: absolute;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 0.22;
+}
+
+.img-carousal img {
+  width: 650px;
+  height: 400px;
+}
+
+.message-popup-2 {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  opacity: 1;
+  height: 20vh;
+}
+.message-popup-2 h1 {
+  /* margin: 4vh 2vw 1vh 5vw; */
+  position: relative;
+  right: 2vw;
+  letter-spacing: 0px;
+  color: #8e53f0;
+  text-transform: uppercase;
+  opacity: 1;
+  margin: 6vh 0 1vh 4vw;
+}
+
+/* media query part */
+
+@media screen and (min-width: 350px) and (max-width: 600px) {
+  .container {
+    width: 100%;
+    margin: 5% 4% 0 1%;
+    display: flex;
+
+    flex-direction: column;
+    position: relative;
+  }
+  .grid-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .dropdown-menu {
+    position: absolute;
+    top: 60%;
+    width: 95%;
+    height: 52vh;
+    margin-top: 2vh;
+  }
+  .menu-option label {
+    width: 40%;
+    top: 5px;
+    left: 5px;
+  }
+  select.myTimeSelect {
+    width: 45%;
+    font-size: 12px;
+  }
+
+  .message-popup {
+    margin-top: 4vh;
+    position: absolute;
+    top: 140vh;
+    width: 95%;
+    padding-bottom: 2vh;
+  }
+  .digital-clock-section {
+    position: absolute;
+    top: 10%;
+
+    width: 95%;
+  }
+  .message-popup-2 {
+    position: absolute;
+    top: 30%;
+    margin-top: 4vh;
+    width: 95%;
+    max-height: 20%;
+  }
+  .message-popup-2 h1 {
+    position: relative;
+    bottom: 10%;
+    text-align: center;
+  }
+  .img-carousal {
+    position: absolute;
+    top: 106vh;
+    margin-top: 4vh;
+  }
+
+  .lower-section {
+    position: absolute;
+    top: 160vh;
+    margin-bottom: 5vh;
+    margin-top: 4vh;
+    width: 95%;
+    height: 30%;
+  }
+  /*****Grid Container-2 ******/
+
+  .digital-clock-section P {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+  .clock {
+    font-size: 24px;
+  }
+  .bg-clock {
+    width: 16vw;
+    height: 6vh;
+  }
+  .bg-clock1 {
+    left: 20%;
+  }
+  .bg-clock2 {
+    left: 40%;
+  }
+  .bg-clock3 {
+    left: 60%;
+  }
+  .bg-clock4 {
+    left: 80%;
+  }
+  .blur-bg1 {
+    top: 90%;
+    left: 10%;
+  }
+  .blur-bg2 {
+    top: 90%;
+    left: 12%;
+  }
+  .message-popup-2 {
+    height: 30vh;
+  }
+
+  .img-carousal img {
+    margin-top: 2vh;
+    width: 95%;
+    height: 100%;
+  }
+  .remainder-msg {
+    height: 80%;
+    width: 42%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 820px) {
+  .container {
+    width: 100%;
+    margin: 5% 4% 0 1%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+  .grid-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .dropdown-menu {
+    position: absolute;
+    top: 54vh;
+    height: 52vh;
+    margin-top: 2vh;
+    width: 95%;
+  }
+  .menu-option label {
+    width: 40%;
+
+    left: 8%;
+  }
+  select.myTimeSelect {
+    width: 50%;
+    font-size: 12px;
+  }
+
+  .message-popup h1 {
+    position: relative;
+    bottom: 30%;
+    left: 15%;
+  }
+  .remainder-msg {
+    margin-bottom: 2vh;
+  }
+  .message-popup {
+    margin-top: 4vh;
+    position: absolute;
+    top: 160vh;
+    width: 95%;
+    height: 10%;
+  }
+  .digital-clock-section {
+    position: absolute;
+    top: 10%;
+    width: 95%;
+    max-height: 25%;
+  }
+  .message-popup-2 {
+    position: absolute;
+    top: 40%;
+    margin-top: 4vh;
+    max-height: 20%;
+    width: 95%;
+  }
+  .message-popup-2 h1 {
+    right: 1vw;
+    text-align: center;
+    left: 4vw;
+  }
+  .img-carousal {
+    position: absolute;
+    top: 105vh;
+    margin-top: 4vh;
+    width: 95%;
+  }
+  .img-carousal img {
+    margin-top: 2vh;
+    width: 100%;
+    height: 100%;
+  }
+  .lower-section {
+    position: absolute;
+    top: 220%;
+    margin-bottom: 5vh;
+    margin-top: 4vh;
+    width: 95%;
+    height: 30%;
+  }
+  /*****Grid Container-2 ******/
+  .section2 {
+    margin-top: 8vh;
+  }
+  .digital-clock-section {
+    height: 30vh;
+  }
+  .digital-clock-section P {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+  .clock {
+    font-size: 24px;
+  }
+  .bg-clock {
+    width: 12vw;
+    height: 6vh;
+  }
+  .bg-clock1 {
+    left: 20%;
+  }
+  .bg-clock2 {
+    left: 40%;
+  }
+  .bg-clock3 {
+    left: 60%;
+  }
+  .bg-clock4 {
+    left: 80%;
+  }
+  .blur-bg1 {
+    top: 90%;
+    left: 10%;
+  }
+  .blur-bg2 {
+    top: 98%;
+    left: 12%;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1100px) {
+  .container {
+    width: 100%;
+    margin: 5% 2% 0 1%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+  .grid-container {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-option {
+    position: relative;
+    top: 10%;
+  }
+  .menu-option label {
+    width: 40%;
+    font-size: 20px;
+    left: 8%;
+  }
+  select.myTimeSelect {
+    width: 50%;
+    font-size: 12px;
+  }
+
+  .remainder-msg {
+    margin-bottom: 2vh;
+  }
+  .message-popup {
+    margin-top: 4vh;
+    position: absolute;
+    top: 140vh;
+    width: 95%;
+  }
+  .message-popup h1 {
+    position: relative;
+    bottom: 2vh;
+    left: 25%;
+  }
+  .digital-clock-section {
+    position: absolute;
+    top: 10%;
+    width: 95%;
+    max-height: 25%;
+  }
+  .message-popup-2 {
+    position: absolute;
+    top: 24vh;
+    margin-top: 4vh;
+    max-height: 20%;
+    width: 95%;
+  }
+
+  .message-popup-2 h1 {
+    position: relative;
+    bottom: 10%;
+    text-align: center;
+  }
+  .img-carousal {
+    position: absolute;
+    top: 90vh;
+    margin-top: 4vh;
+    width: 100%;
+  }
+  .img-carousal img {
+    margin-top: 2vh;
+    width: 95%;
+    height: 100%;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 42vh;
+    height: 48vh;
+    margin-top: 2vh;
+
+    width: 95%;
+  }
+  .lower-section {
+    position: absolute;
+    top: 150vh;
+    margin-bottom: 5vh;
+    margin-top: 4vh;
+    width: 100%;
+    height: 30%;
+  }
+  .remainder-msg {
+    width: 30%;
+    position: absolute;
+    right: 5%;
+    height: 80%;
+  }
+  .remainder-msg p {
+    font-size: 18px;
+  }
+  /*****Grid Container-2 ******/
+  .section2 {
+    margin-top: 8vh;
+  }
+  .digital-clock-section {
+    height: 30vh;
+  }
+  .digital-clock-section P {
+    font-size: 32px;
+    margin-left: 5%;
+  }
+  .clock {
+    font-size: 24px;
+  }
+  .bg-clock {
+    width: 16vw;
+    height: 6vh;
+    padding-top: 2vh;
+  }
+  .bg-clock1 {
+    left: 20%;
+  }
+  .bg-clock2 {
+    left: 40%;
+  }
+  .bg-clock3 {
+    left: 60%;
+  }
+  .bg-clock4 {
+    left: 80%;
+  }
+  .blur-bg1 {
+    top: 90%;
+    left: 10%;
+  }
+  .blur-bg2 {
+    top: 98%;
+    left: 12%;
+  }
+}
+
